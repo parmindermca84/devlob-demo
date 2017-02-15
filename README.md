@@ -1,2 +1,5 @@
 # Devlob Demo Project
-This repository contains all the code and files taught by devlob on youtube. This includes the assignments covered and a demo project that is mini social networking project.
+This repository contains all the code and files taught by devlob on youtube which is Laravel 5.3 tutorials for beginners.
+https://www.youtube.com/watch?v=a8ZpAf_tNh0&list=PL3ZhWMazGi9IYymniZgqwnYuPFDvaEHJb
+
+This includes the assignments covered and a demo project that is mini social networking project.
