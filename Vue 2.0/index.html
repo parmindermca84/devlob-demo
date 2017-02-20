@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue 2 Introduction</title>
+
+
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>Hello from HTML</h1>
+
+			<h1>{{ message }}</h1>
+		</div>
+	</body>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '.container',
+			data: {
+				message: 'Hello from Vue'
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,41 @@
+<div id="app">
+	<h1>Votes: {{ votes }}</h1>
+	<p>Vote from: {{ state }}<br><input type="text" v-model="state"></p>
+	<button @click="increase">+</button>
+	<button v-on:click="decrease">-</button>
+</div>
+
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#app',
+		
+		data: {
+			votes: 0,
+			state: null
+		},
+
+		methods: {
+			increase: function() {
+				if (this.state == 'Punjab') {
+					this.votes += 3; 	
+				} else if (this.state == 'Haryana') {
+					this.votes += 2; 	
+				} else {
+					this.votes += 1; 
+				}
+			},
+
+			decrease: function() {
+				if (this.state == 'Punjab') {
+					this.votes -= 3; 	
+				} else if (this.state == 'Haryana') {
+					this.votes -= 2; 	
+				} else {
+					this.votes -= 1; 
+				}
+			}
+		}
+
+	});
+</script>

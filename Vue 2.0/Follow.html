@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="bootstrap.css"></style>
+
+<div id="app">
+	<button v-if = "!follows" @click="follows = true" class="btn btn-success">Follow</button>
+
+	<button v-else v-on:click="follows = false"  class="btn btn-danger">Unfollow</button>
+
+	<pre>
+	{{ $data }}
+	</pre>
+</div>
+
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript">
+	var app = new Vue({
+		el: "#app",
+		data: {
+			follows: false
+		}
+
+	});
+</script>
